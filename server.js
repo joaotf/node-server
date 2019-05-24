@@ -7,6 +7,9 @@ app.use(body.json());
 
 let usuarios = [];
 
+app.get("/", (req, res) => {
+  res.send("Funcionando!");
+});
 app.get("/usuario", (req, res) => {
   res.send(usuarios);
 });
